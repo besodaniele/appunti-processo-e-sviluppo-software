@@ -210,5 +210,241 @@ Obiettivi, proprietà di dominio rilevanti, requisiti, assunzioni, responsabilit
 Organizzare questi in una struttura coerente. Documentare in una forma comprensibile a tutti gli interessati. Viene prodotto il Requirements Document (RD).
 \subsection{Consolidazione dei requisiti}
 Attività per assicurare la qualità del RD. Vengono analizzate l'adeguatezza, la completezza, la mancanza di inconsistenze, vengono poi sistemati gli errori e i difetti. Viene prodotto un RD consolidato.
+\section{Analisi di dominio ed elicitazione dei requisiti}
+Il processo prevede:
+\begin{itemize}
+	\item Identificare gli stakeholder e interagire con loro.
+	\item Applicare tecniche di elicitazione \textit{artefact-driven}.
+	\begin{itemize}
+		\item Studio di background
+		\item Raccoglimento dati e questionari
+		\item Griglie di repertorio, card sorting per acquisizione di concetti.
+		\item Scenari, storyboard per esplorare i problemi del mondo.
+		\item Prototipi, mock-up per feedback rapido.
+	\end{itemize}
+	\item Tecniche di elicitazione \textit{stakeholder-driven}.
+	\begin{itemize}
+		\item Interviste.
+		\item Osservazioni e studi etnografici.
+		\item Sessioni di gruppo.
+	\end{itemize}
+\end{itemize}
+Per comprendere i problemi del mondo è necessario selezionare stakeholder rappresentativi, gli aspetti rilevanti sono;
+\begin{itemize}
+	\item Posizione nell'organizzazione.
+	\item Ruolo nelle decisioni sul sistema to-be.
+	\item Livello di conoscenza del dominio.
+	\item Esposizione ai problemi percepiti.
+	\item Influenza sull'accettazione del sistema.
+	\item Obiettivi personali e conflitti di interessi.
+\end{itemize}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\textwidth]{pictures/ostacoliAcquisizione.png}
+	\caption{Ostacoli nell'acquisizione dei requisiti}
+\end{figure}
+L'interazione con gli stakeholder richiede skill di comunicazione: utilizzare la giusta terminologia, affrontare i punti chiave, fondare relazioni di fiducia.
+Per riformulare le conoscenze è necessario organizzare meeting per presentare la conoscenza del mondo, acquisita da fonti diverse, per integrarle in una forma strutturata.
+\section{Tecniche di elicitazione artefact-driven}
+Effettuare uno studio di background comprende acquisire, leggere e sintetizzare documenti riguardo:
+\begin{itemize}
+	\item L'\textbf{organizzazione}: diagrammi di organizzazione, business plan, report finanziari, organizzazione meeting, etc \dots
+	\item Il \textbf{dominio}: manuali, questionari, articoli, leggi, report su sistemi simili sullo stesso dominio.
+	\item Il \textbf{sistema as-is}: workflow documentati, procedure, regole di business, documenti scambiati, report di difetti/lamentele, richieste di cambiamenti, etc \dots
+\end{itemize}
+Quali sono i problemi degli studi di background?
+\begin{itemize}
+	\item \textbf{Contro}
+	\begin{itemize}
+		\item Molti documenti voluminosi vanno letti.
+		\item Le informazioni chiave vanno estratte da molti dettagli irrilevanti.
+		\item Sfruttare meta-conoscenze per discriminare informazioni rilevanti da quelle inutili.
+	\end{itemize}
+	\item \textbf{Pro}
+	\begin{itemize}
+		\item Produce informazioni basilari utili per interagire con gli stakeholder.
+	\end{itemize}
+\end{itemize}
+\subsection{Questionari}
+Somministrare una lista di domande a una selezione di stakeholder, ognuna con una lista di possibili risposte (con allegato un breve contesto se necessario).
+È possibile somministrare domande a risposta multipla o domande di peso, ovvero una serie di affermazioni d pesare in maniera:
+\begin{itemize}
+	\item Qualitativa ("alto","basso",\dots)
+	\item Quantitativa (percentuale)
+	\item Per esprimere la percepita importanza, preferenza, rischio, etc \dots
+\end{itemize}
+Sono efficaci per acquisire velocemente informazioni soggettive, in maniera economica e remota per molte persone.
+Sono utili per preparare meglio interviste più specifiche.
+\\
+La preparazione va effettuata con molta attenzione in quanto potrebbero introdurre \textbf{bias} o informazioni non affidabili (a causa di incomprensioni delle domande o delle risposte, risposte non consistenti, etc \dots).
+Le linee guida per la stesura dei questionari sono:
+\begin{itemize}
+	\item Selezionare un campione di persone rappresentative e statisticamente significante. Fornire le ragioni dietro queste scelte.
+	\item Controllare la copertura delle domande e delle possibili risposte.
+	\item Assicurarsi che le domande, le risposte e le formulazioni siano senza bias e non ambigue.
+	\item Aggiungere domande implicitamente ridondanti per rilevare risposte incoerenti.
+	\item Far controllare il questionario da un ente terzo.
+\end{itemize}
+\subsection{Storyboard}
+Necessaria per acquisire e validare informazioni da esempi concreti riguardanti il sistema as-is e to-be.
+Una story board racconta una storia tramite una sequenza di snapshot (frasi, schizzi, slide, immagini\dots) che descrivono un evento o una serie di eventi. Tipicamente annotati da chi è coinvolto, cosa gli succede, perché ciò accade, cosa succede se (non) accade, etc \dots
+Può essere formulato in maniera passiva (la storia viene raccontata agli stakeholder) o in maniera attiva (gli stakeholder contribuiscono).
+\subsection{Scenari}
+Gli scenari illustrano tipiche sequenze di interazioni tra componenti di sistema per raggiungere obiettivi impliciti. Possono essere utilizzati come specifiche di un test case.
+Vengono tendenzialmente illustrati tramite testo o diagrammi. Ne esistono di vari tipi:
+\begin{itemize}
+	\item \textbf{Positivi:} un comportamento che il sistema dovrebbe coprire.
+	\item \textbf{Negativi:} un comportamento che il sistema dovrebbe escludere.
+	\item \textbf{Normali:} tutto procede come ci si aspetta.
+	\item \textbf{Anormali:} una sequenza di una interazione desiderata nel caso di eccezioni (rimane positiva).
+\end{itemize}
+Gli scenari presentano sia vantaggi che svantaggi, pur essendo probabilmente il metodo di elicitazione più utile:
+\begin{itemize}
+	\item \textbf{Pro}
+	\begin{itemize}
+		\item Esempi concreti e contro esempi.
+		\item Appetibili per gli stakeholder.
+		\item Utilizzabili come test di accettazione.
+	\end{itemize}
+	\item \textbf{Contro}
+	\begin{itemize}
+		\item Inerentemente parziali.
+		\item Esplosione combinatoria.
+		\item Potenzialmente overkill.
+		\item Potrebbero contenere dettagli irrilevanti.
+		\item Livelli di granularità diversi tra stakeholder.
+	\end{itemize}
+\end{itemize}
+\subsection{Prototipi e mock-up}
+Il loro obiettivo è quello di verificare l'adeguatezza dei requisiti tramite un feedback diretto degli utenti, attraverso uno schizzo del sistema to-be in azione.
+In particolare viene posta particolare attenzione sui requisiti non chiari o difficili da formulare, in modo da elicitarli ulteriormente.
+Un prototipo è una implementazione veloce di qualche aspetto, vi sono due tipi:
+\begin{itemize}
+	\item \textbf{Prototipi di interfaccia utente:} si concentrano sull'usabilità mostrano form di i/o o pattern di dialogo.
+	\item \textbf{Prototipi di funzionalità:} si concentrano su funzionalità specifiche.
+\end{itemize}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\textwidth]{pictures/schemaPrototipo.png}
+	\caption{Schema di sviluppo di un prototipo}
+\end{figure}
+Come per le altre tecniche di elicitazione, anche i prototipi presentano vantaggi e svantaggi:
+\begin{itemize}
+	\item \textbf{Pro}
+	\begin{itemize}
+		\item Assaggio concreto di come sarà il software, vengono quindi chiariti i requisiti, elicitati quelli nascosti, in generale si miglioano quelli raccolti.
+	\end{itemize}
+	\item \textbf{Contro}
+	\begin{itemize}
+		\item Possono essere fuorvianti, alzando troppo le aspettative.
+		\item Il codice prodotto di fretta senza cura può essere difficile da riutilizzare. 
+		\end{itemize}
+\end{itemize}
+\subsection{Riutilizzo della conoscenza}
+Come obiettivo vogliamo velocizzare il processo di elicitazione riutilizzando la conoscenza acquisita in progetti pregressi affini.
+In generale il processo consiste in:
+\begin{enumerate}
+	\item Ottenere la conoscenza rilevante proveniente da altri sistemi.
+	\item Trasportarla nel sistema target.
+	\item Validare il risultato, adattarlo se necessario e integrarlo con la conoscenza già conseguita. 
+\end{enumerate}
+La conoscenza potrebbe dipende o meno dal dominio. Chiaramente sono presenti vantaggi e svantaggi:
+\begin{itemize}
+	\item \textbf{Pro}
+	\begin{itemize}
+		\item Il processo avviene in maniera naturale.
+		\item Una guida significative riduce lo sforzo necessario per l'elicitazione.
+		\item Vengono ereditate strutture e qualità di aspetti astratti di dominio.
+		\item Efficace per completare i requisiti con aspetti mancanti.
+	\end{itemize}
+	\item \textbf{Contro}
+	\begin{itemize}
+		\item Utile solo se il dominio astratto è sufficientemente simile e accurato.
+		\item Definire domini astratti per facilitare il riuso è difficile.
+		\item Richiede lavoro per valutare l'integrazione.
+		\item Affinità parziali richiedono adattamenti insidiosi.
+	\end{itemize}
+\end{itemize}
+\subsection{Modelli minori}
+\begin{itemize}
+	\item \textbf{Card sorting:} chiedere agli stakeholder di partizionare un insieme  di cartelli
+	\begin{itemize}
+		\item Ogni carta cattura un concetto testualmente o graficamente.
+		\item Le carte vengono raggruppate secondo criteri dello stakeholder.
+		\item L'obiettivo consiste nell'acquisire ulteriori informazioni riguardanti concetti che sono già stati elicitati.
+		\item Per ogni sottoinsieme di carte viene chiesto le proprietà comuni implicite utilizzate per raggrupparle.
+		\item Iterare con le stesse carte per nuovi raggruppamenti e proprietà. 
+	\end{itemize}
+\end{itemize}
+\begin{itemize}
+	\item \textbf{Data collection:} dati marketing, statistiche d'utilizzo, metriche di performance, costi\dots
+	\begin{itemize}
+		\item L'obiettivo è raccogliere fatti e cifre non documentati. Ciò viene fatto tramite esperimenti o una selezione di dataset di rappresentativi presi da fonti disponibili.
+		\item Potrebbe complementare lo studio di background. 
+	\end{itemize}
+\end{itemize}
+\section{Tecniche di elicitazione stakeholder-driven}
+\subsection{Interviste}
+Tecnica primaria per elicitare la conoscenza.
+\begin{enumerate}
+	\item Selezionare lo stakeholder specificatamente per l'informazione da acquisire.
+	\item Organizzare un incontro con l'intervistato, fare domande e segnare le risposte.
+	\item Scrivere un report con trascritto dell'intervista.
+	\item Sottomettere il report per la validazione e il rifinimento.
+\end{enumerate}
+Un'intervista può coinvolgere più stakeholder, ciò può far risparmiare tempo ma può anche inibire la comunicazione.
+Le interviste possono essere di due tipi:
+\begin{itemize}
+	\item \textbf{Strutturate:} domande predefinite, specifiche per la ragione dell'intervista. Alcune domande aperte, altre a risposta multipla. 
+	\item \textbf{Non strutturate:} nessuna domanda predefinita, discussione libera sul sistema as-is, problemi percepiti, soluzioni proposte. Vengono esplorati problemi che potrebbero essere stati tralasciati.
+\end{itemize}
+Una intervista efficace dovrebbe mischiare le due modalità, partendo da una parte strutturata per poi aprirsi a domande più libere quando necessario.
+È preferibile seguire le seguenti linee guida:
+\begin{itemize}
+    \item Preparati in anticipo, concentrandoti sul problema giusto al momento giusto
+    \begin{itemize}
+        \item Evita domande ovvie per l’intervistato (es. studia prima il suo background)
+        \item Progetta in anticipo una sequenza di domande specifica per quell’intervistato
+    \end{itemize}
+
+    \item Centra l’intervista sul lavoro e sulle preoccupazioni dell’intervistato
+    \item Mantieni il controllo dell’intervista
+    \item Fai sentire l’intervistato a proprio agio
+    \begin{itemize}
+        \item All’inizio: rompi il ghiaccio, fornisci una motivazione, poni domande semplici
+        \item Considera la persona, non solo il suo ruolo
+        \item Mostrati sempre come un partner affidabile
+        \item Fai domande del tipo ``Perché?''
+    \end{itemize}
+
+    \item Evita certi tipi di domande:
+    \begin{itemize}
+        \item di parte o faziose
+        \item affermative
+        \item ovvie o impossibili da rispondere per quell’intervistato
+    \end{itemize}
+
+    \item Rivedi e struttura le trascrizioni dell’intervista finché sono ancora fresche nella mente
+    \begin{itemize}
+        \item includendo reazioni personali, atteggiamenti, ecc.
+    \end{itemize}
+
+    \item Mantieni l’intervistato coinvolto
+    \begin{itemize}
+        \item co-rivedi la trascrizione per validazione e perfezionamento
+    \end{itemize}
+\end{itemize}
+\subsection{Osservazioni e studi etnografici}
+A volte comprendere un'azione è più facile osservandola piuttosto che tramite una spiegazione verbale o testuale.
+L'osservazione può essere fatta in due modi:
+\begin{itemize}
+	\item \textbf{Passiva:} nessuna interferenza con colui che esegue l'azione.
+	\begin{itemize}
+		\item Osservazione dall'esterno, registrazione, trascritti e analisi.
+		\item Analisi di protocollo: gli esecutori spiegano cosa fanno mentre lo fanno.
+		\item Studio etnografico: osservazione prolungata per comprendere proprietà emergenti del gruppo sociale coinvolto.
+	\end{itemize}
+	\item \textbf{Attiva:} l'osservatore partecipa all'azione, diventando anche un membro del gruppo.
+\end{itemize}
 
 \end{document}
