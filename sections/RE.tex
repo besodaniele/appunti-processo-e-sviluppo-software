@@ -245,7 +245,8 @@ Per comprendere i problemi del mondo è necessario selezionare stakeholder rappr
 \end{figure}
 L'interazione con gli stakeholder richiede skill di comunicazione: utilizzare la giusta terminologia, affrontare i punti chiave, fondare relazioni di fiducia.
 Per riformulare le conoscenze è necessario organizzare meeting per presentare la conoscenza del mondo, acquisita da fonti diverse, per integrarle in una forma strutturata.
-\section{Tecniche di elicitazione artefact-driven}
+\subsection{Tecniche di elicitazione artefact-driven}
+\subsubsection{Studio di background}
 Effettuare uno studio di background comprende acquisire, leggere e sintetizzare documenti riguardo:
 \begin{itemize}
 	\item L'\textbf{organizzazione}: diagrammi di organizzazione, business plan, report finanziari, organizzazione meeting, etc \dots
@@ -265,7 +266,7 @@ Quali sono i problemi degli studi di background?
 		\item Produce informazioni basilari utili per interagire con gli stakeholder.
 	\end{itemize}
 \end{itemize}
-\subsection{Questionari}
+\subsubsection{Questionari}
 Somministrare una lista di domande a una selezione di stakeholder, ognuna con una lista di possibili risposte (con allegato un breve contesto se necessario).
 È possibile somministrare domande a risposta multipla o domande di peso, ovvero una serie di affermazioni d pesare in maniera:
 \begin{itemize}
@@ -285,11 +286,11 @@ Le linee guida per la stesura dei questionari sono:
 	\item Aggiungere domande implicitamente ridondanti per rilevare risposte incoerenti.
 	\item Far controllare il questionario da un ente terzo.
 \end{itemize}
-\subsection{Storyboard}
+\subsubsection{Storyboard}
 Necessaria per acquisire e validare informazioni da esempi concreti riguardanti il sistema as-is e to-be.
 Una story board racconta una storia tramite una sequenza di snapshot (frasi, schizzi, slide, immagini\dots) che descrivono un evento o una serie di eventi. Tipicamente annotati da chi è coinvolto, cosa gli succede, perché ciò accade, cosa succede se (non) accade, etc \dots
 Può essere formulato in maniera passiva (la storia viene raccontata agli stakeholder) o in maniera attiva (gli stakeholder contribuiscono).
-\subsection{Scenari}
+\subsubsection{Scenari}
 Gli scenari illustrano tipiche sequenze di interazioni tra componenti di sistema per raggiungere obiettivi impliciti. Possono essere utilizzati come specifiche di un test case.
 Vengono tendenzialmente illustrati tramite testo o diagrammi. Ne esistono di vari tipi:
 \begin{itemize}
@@ -315,7 +316,7 @@ Gli scenari presentano sia vantaggi che svantaggi, pur essendo probabilmente il 
 		\item Livelli di granularità diversi tra stakeholder.
 	\end{itemize}
 \end{itemize}
-\subsection{Prototipi e mock-up}
+\subsubsection{Prototipi e mock-up}
 Il loro obiettivo è quello di verificare l'adeguatezza dei requisiti tramite un feedback diretto degli utenti, attraverso uno schizzo del sistema to-be in azione.
 In particolare viene posta particolare attenzione sui requisiti non chiari o difficili da formulare, in modo da elicitarli ulteriormente.
 Un prototipo è una implementazione veloce di qualche aspetto, vi sono due tipi:
@@ -340,7 +341,7 @@ Come per le altre tecniche di elicitazione, anche i prototipi presentano vantagg
 		\item Il codice prodotto di fretta senza cura può essere difficile da riutilizzare. 
 		\end{itemize}
 \end{itemize}
-\subsection{Riutilizzo della conoscenza}
+\subsubsection{Riutilizzo della conoscenza}
 Come obiettivo vogliamo velocizzare il processo di elicitazione riutilizzando la conoscenza acquisita in progetti pregressi affini.
 In generale il processo consiste in:
 \begin{enumerate}
@@ -365,7 +366,7 @@ La conoscenza potrebbe dipende o meno dal dominio. Chiaramente sono presenti van
 		\item Affinità parziali richiedono adattamenti insidiosi.
 	\end{itemize}
 \end{itemize}
-\subsection{Modelli minori}
+\subsubsection{Modelli minori}
 \begin{itemize}
 	\item \textbf{Card sorting:} chiedere agli stakeholder di partizionare un insieme  di cartelli
 	\begin{itemize}
@@ -383,8 +384,8 @@ La conoscenza potrebbe dipende o meno dal dominio. Chiaramente sono presenti van
 		\item Potrebbe complementare lo studio di background. 
 	\end{itemize}
 \end{itemize}
-\section{Tecniche di elicitazione stakeholder-driven}
-\subsection{Interviste}
+\subsection{Tecniche di elicitazione stakeholder-driven}
+\subsubsection{Interviste}
 Tecnica primaria per elicitare la conoscenza.
 \begin{enumerate}
 	\item Selezionare lo stakeholder specificatamente per l'informazione da acquisire.
@@ -434,7 +435,7 @@ Una intervista efficace dovrebbe mischiare le due modalità, partendo da una par
         \item co-rivedi la trascrizione per validazione e perfezionamento
     \end{itemize}
 \end{itemize}
-\subsection{Osservazioni e studi etnografici}
+\subsubsection{Osservazioni e studi etnografici}
 A volte comprendere un'azione è più facile osservandola piuttosto che tramite una spiegazione verbale o testuale.
 L'osservazione può essere fatta in due modi:
 \begin{itemize}
@@ -462,7 +463,7 @@ Vantaggi e svantaggi:
 		\item Concentrato sul sistema as-is.
 	\end{itemize}
 \end{itemize}
-\subsection{Sessioni di gruppo}
+\subsubsection{Sessioni di gruppo}
 Le sessioni di gruppo permettono di avere una migliore percezione, giudizio e inventiva grazie alle interazioni con un gruppo diversificato.
 L'elicitazione avviene tramite una serie di workshop di gruppo (su più giorni) seguiti da azioni di follow-up.
 Vengono utilizzati media audio visivi, grafici per stimolare la discussione e registrare i risultati.
@@ -487,10 +488,269 @@ Vantaggi e svantaggi:
 	\begin{itemize}
 		\item Composizione del gruppo critica.
 		\item Consuma molto tempo per persone chiave, che generalmente sono molto occupate.
-		\item Richiede skill e expertise del leader.
+		\item Richiede skill ed expertise del leader.
 		\item Le dinamiche di gruppo possono inibire la comunicazione.
 		\item Rischio di perdere il focus e la struttura, generando poco materiale utile e sprecando tempo.
 		\item Copertura superficiale di problemi più tecnici.
 	\end{itemize}
 \end{itemize}
+\section{Valutazione dei requisiti}
+In generale si vuole compiere le seguenti attività:
+\begin{itemize}
+	\item Gestione delle inconsistenze
+	\begin{itemize}
+		\item Capire i tipi di inconsistenze.
+		\item Gestirle.
+		\item Gestire i conflitti in maniera sistematica.
+	\end{itemize}
+	\item Valutare opzioni alternative per prendere decisioni.
+	\item Prioritizzare i requisiti.
+\end{itemize}
+\subsection{Conflitti}
+Una inconsistenza è una violazione delle regole di consistenza tra oggetti. Possono nascere dalla pluralità dei punti di vista degli stakeholder o da conflitti tra requisiti di qualità (ad es. sicurezza e usabilità).
+Le inconsistenze devono essere identificate, analizzate e risolte. Questo deve essere fatto non troppo presto, per permettere una ulteriore elicitazione e non troppo tardi, per permettere lo sviluppo software.
+Le inconsistenze si dividono in:
+\begin{itemize}
+	\item \textbf{Conflitti di terminologia:} Stessi concetti chiamati in modo diverso in affermazioni diverse.
+	\item \textbf{Conflitti di designazione:} Stesso nome per concetti diversi.
+	\item \textbf{Conflitti di struttura:} Stesso concetto strutturato in maniera diversa in affermazioni diverse.
+	\item \textbf{Conflitto forte:} Affermazioni non possono essere vere contemporaneamente.
+	\item \textbf{Conflitto debole (divergenze):} Affermazioni non soddisfacibili contemporaneamente sotto alcuni vincoli.
+\end{itemize}
+Le inconsistenze di terminilogia, designazione e struttura sono generalmente risolvibili tramite l'utilizzo di un glossario dei termini.
+I conflitti forti e deboli hanno cause più profonde e difficili da risolvere.
+Potrebbero esserci obiettivi personali degli stakeholder in conflitto, che devono essere gestiti alla base e propagati.
+Alcune inconsistenze vengono inerentemente portate dalla presenza di requisiti non funzionali.
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\textwidth]{pictures/GestioneConflitti.png}
+	\caption{Gestione dei conflitti in modo sistematico}
+\end{figure}
+\begin{itemize}
+	\item Un accavallamento è la presenza di riferimenti agli stessi termini o concetti in affermazioni diverse.
+	\item Il rilevamento dei conflitti viene svolto in maniera informale, applicando delle euristiche su categorie di requisiti in conflitto. Viene poi svolto un processo formale.
+	\item Per una risoluzione ottimale è meglio esplorare più soluzioni alternative, confrontarle e scegliere la migliore.
+	Per generare soluzioni è possibile utilizzare tecniche di elicitazione o applicare tattiche di risoluzione.
+	Queste ultime si dividono in:
+	\begin{itemize}
+		\item Evitare requisiti limitanti.
+		\item Restaurare affermazioni conflittuali.
+		\item Indebolire affermazioni conflittuali.
+		\item Rinunciare a requisiti di minor importanza.
+		\item Specializzare i la sorgente del conflitto, o l'oggetto del conflitto.
+	\end{itemize}
+	\item I criteri per la valutazione di una soluzione sono:
+	\begin{itemize}
+		\item Contribuzione a requisiti non funzionali critici.
+		\item Contribuzione alla risoluzione di altri conflitti.
+		\item Applicazione di principi di analisi dei rischi.
+	\end{itemize}
+\end{itemize}
+\subsection{Prioritizzazione dei requisiti}
+I requisiti dopo essere stati elicitati e valutati devono essere prioritizzati per:
+\begin{itemize}
+	\item Risolvere conflitti tra requisiti.
+	\item Assegnare risorse limitate.
+	\item Supportare lo sviluppo incrementale.
+	\item Gestire cambiamenti futuri inaspettati.
+\end{itemize}
+Alcuni principi per la prioritizzazione sono:
+\begin{enumerate}
+	\item Pochi livelli di priorità.
+	\item Livelli relativi.
+	\item Rendere i requisiti confrontabili (stesso livello di granularità, stesso livello di astrazione).
+	\item Non rendere i requisiti mutualmente esclusivi.
+	\item Far accordare i requisiti a tutti gli stakeholder.
+\end{enumerate}
+\subsubsection{Prioritizzazione valore-costo}
+Tecnica sistematica che rispetta i principi $(1)$ e $(2)$.
+Diviso in tre fasi:
+\begin{enumerate}
+	\item Stima relativa del contributo di ogni requisito al valore del progetto.
+	\item Stima relativa del costo di ogni requisito.
+	\item Plot del grafico valore-costo e selezione dei requisiti.
+\end{enumerate}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\textwidth]{pictures/GraficoCostoValore.png}
+	\caption{Prioritizzazione valore-costo}
+\end{figure}
+In particolare i punti segnati in figura sono:
+\begin{itemize}
+	\item POD: Produce Optimal meeting Dates
+	\item HPL: Handle Preferred Locations
+	\item PCR: Parameterize Conflict Resolution
+	\item MLC: Support Multi-Lingual Communication
+	\item MA: Provide Meeting Assistant
+\end{itemize}
+La tecnica AHP permette di determinare in quale proporzione ciascun requisiti $R_1, R_2, \ldots, R_n$ contribuisce al criterio $Crit$.
+Viene prima applicato con $Crit=Valore$ e poi con $Crit=Costo$.
+\begin{enumerate}
+	\item Viene prima costruita una matrice di confronto, dove il contributo a $Crit$ di ogni requisito $R_i$ viene confrontato con quello di ogni altro requisito $R_j$.
+	\item Viene poi determinato come $Crit$ è distribuito tra gli $R_i$.
+\end{enumerate}
+\subsubsection{Step 1}
+Scala per confrontare il contributo di $R_i$ al \textit{Criterio} rispetto a $R_j$:
+\begin{enumerate}
+	\item Contribuisce in egual misura
+	\item Contribuisce leggermente di più
+	\item Contribuisce decisamente di più
+	\item Contribuisce molto di più
+	\item Contribuisce estremamente di più
+\end{enumerate}
+Nella matrice di confronto: $R_{ji} = \frac{1}{R_{ij}} \quad (1 \leq i, j \leq N)$ \\
+Matrice di confronto:
+\begin{center}
+\renewcommand{\arraystretch}{1.4} % aumenta lo spazio tra le righe
+\small
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{>{\raggedright\arraybackslash}p{3.3cm}|
+				>{\centering\arraybackslash}p{2.2cm}|
+				>{\centering\arraybackslash}p{2.2cm}|
+				>{\centering\arraybackslash}p{3cm}|
+				>{\centering\arraybackslash}p{2.4cm}|
+				>{\centering\arraybackslash}p{2.4cm}}
+\toprule
+\textit{Criterio: valore} &
+\makecell{Produrre\\data ottimale} &
+\makecell{Gestire\\località \\preferite} &
+\makecell{Parametrizzare\\strategia di\\risoluzione \\ dei conflitti} &
+\makecell{Comunicazione\\multilingue} &
+\makecell{Assistente\\per riunioni} \\
+\midrule
+\text{Produrre data ottimale} & 1 & 3 & 5 & 9 & 7 \\
+\text{Gestire località preferite} & 1/3 & 1 & 3 & 7 & 7 \\
+\makecell{Parametrizzare \\ strategia di \\ risoluzione dei conflitti} & 1/5 & 1/3 & 1 & 5 & 3 \\
+\makecell{Comunicazione\\ multilingue} & 1/9 & 1/7 & 1/5 & 1 & 1/3 \\
+\text{Assistente per riunioni} & 1/7 & 1/7 & 1/3 & 3 & 1 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{center}
+\subsubsection{Step 2}
+Per determinare la distribuzione vengono usati gli autovalori della matrice di confronto.
+\begin{itemize}
+	\item 2.a) Normalizzazione delle colonne: $R'_{ij} = R_{ij}/ \sum_{i} R_{ij}$
+	\item 2.b) Media sulle righe: $Contrib(R_i,Crit) = \sum_{j} R'_{ij}/N$
+\end{itemize}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.4} % aumenta lo spazio tra le righe
+\small
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{>{\raggedright\arraybackslash}p{3.3cm}|
+				>{\centering\arraybackslash}p{2.2cm}|
+				>{\centering\arraybackslash}p{2.2cm}|
+				>{\centering\arraybackslash}p{3cm}|
+				>{\centering\arraybackslash}p{2.4cm}|
+				>{\centering\arraybackslash}p{2.4cm}}
+\toprule
+\textit{Criterio: valore} &
+\makecell{Produrre\\data ottimale} &
+\makecell{Gestire\\località \\preferite} &
+\makecell{Parametrizzare\\strategia di\\risoluzione \\ dei conflitti} &
+\makecell{Comunicazione\\multilingue} &
+\makecell{Assistente\\per riunioni} \\
+\midrule
+\text{Produrre data ottimale} & 0.56 & 0.65 & 0.52 & 0.36 & 0.38 \\
+\text{Gestire località preferite} & 0.19 & 0.22 & 0.31 & 0.28 & 0.38 \\
+\makecell{Parametrizzare \\ strategia di \\ risoluzione dei conflitti} & 0.11 & 0.07 & 0.10 & 0.20 & 0.16 \\
+\makecell{Comunicazione\\ multilingue} & 0.06 & 0.03 & 0.02 & 0.04 & 0.02 \\
+\text{Assistente per riunioni} & 0.08 & 0.03 & 0.03 & 0.12 & 0.05 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{center}
+\section{Specifiche e tecniche di documentazione}
+Come documentare i requisiti?
+\subsection{Linguaggio naturale}
+\begin{itemize}
+	\item \textbf{Documentazione libera in linguaggio naturale senza restrizioni:} 
+	Prosa scritta in linguaggio naturale senza vincoli. L'espressività non ha limiti, la comunicazione è efficace e non richiede skill particolari, Tuttavia è prona a errori e difetti.
+	Le ambiguità sono inerenti al linguaggio naturale.
+	\item \textbf{Documentazione in linguaggio naturale con vincoli:}
+	Regole locali riguardanti la scrittura dei requisiti. Regole globali riguardanti l'organizzazione del documenti dei requisiti.
+\end{itemize}
+Buone regole per la scrittura dei requisiti:
+\begin{itemize}
+	\item Identificare i lettori e scrivere di conseguenza.
+	\item Dichiarare prima cosa si intende fare, poi eseguirlo.
+	\item Motivare prima le scelte; riassumere le conclusioni alla fine.
+	\item Assicurarsi che ogni concetto sia definito prima dell'uso.
+	\item Chiedersi continuamente: ``È comprensibile? È sufficiente? È pertinente?''.
+	\item Non inserire più di un requisito, un'assunzione o una proprietà del dominio in una singola frase. Tenere le frasi brevi.
+	\item Usare ``deve'' per prescrizioni obbligatorie e ``dovrebbe'' per prescrizioni desiderabili.
+	\item Evitare gergo e acronimi non necessari.
+	\item Usare esempi esplicativi per chiarire affermazioni astratte.
+	\item Fornire diagrammi per relazioni complesse tra elementi.
+\end{itemize}
+\subsection{Notazioni semi-formali in diagramma}
+Vengono utilizzati per complementare la documentazione in linguaggio naturale o per rimpiazzarla.
+Vengono dedicati ad aspetti specifici del sistema (as-is o to-be).
+Dato che sono strumenti grafici rendono la comunicazione facile e veloce.
+Sono comunque semi-formali dato che alcune dichiarazioni rimangono in linguaggio naturale.
+\begin{figure}[hbt]
+	\centering
+	\includegraphics[width=0.7\textwidth]{pictures/DiagrammiProblema.png}
+	\caption{Esempio di diagramma dei problemi}
+\end{figure}
+\begin{figure}[hbt]
+	\centering
+	\includegraphics[width=0.7\textwidth]{pictures/ER.png}
+	\caption{Esempio di diagramma delle entità e relazioni}
+\end{figure}
+\noindent
+Quando si vuole combinare dati e attività si possono utilizzare i \textbf{diagrammi SADT}.
+Servono a catturare le attività e i dati del sistema as-is e to-be.
+È diviso in due parti:
+\begin{itemize}
+	\item \textbf{Actigram:} Relaziona le attività in base a legami di dipendenza dei dati.
+	\item \textbf{Datagram:} Relaziona i dati in base a legami di dipendenza di attività. 
+\end{itemize}
+I dati che compaiono in un actigram devono apparire nel datagram e viceversa.
+\begin{figure}[hbt]
+	\centering
+	\includegraphics[width=0.7\textwidth]{pictures/SADT.png}
+	\caption{Esempio di diagramma SADT}
+\end{figure}
+\\
+Le regole di consistenza e completezza possono essere controllate tramite l'uso di tool specifici. Ogni attività deve avere un input e un output.
+Tutti i dati devono avere un produttore e un consumatore. I dati di I/O di un'attività devono essere dati di I/O delle sotto attività.
+Ogni attività nel datagram deve essere definito in un actigram.
+\\
+I diagrammi per documentare le operazioni di sistema sono i casi d'uso, mentre per rappresentare scenari di interazioni si usano i diagrammi che tracciano gli eventi, come i sequence diagram.
+Infine per documentare i comportamenti di sistema si possono usare i diagrammi di macchine a stati.\\
+Le notazioni a diagramma portano vantaggi e svantaggi:
+\begin{itemize}
+	\item \textbf{Pro}
+	\begin{itemize}
+		\item Dichiarazione formale di diversi aspetti del sistema + notazioni informali sulle proprietà per maggiore precisione.
+		\item Notazione grafica, quindi facilmente comprensibile e fornisce una struttura.
+		\item Possibilità di effettuare query tramite tool.
+	\end{itemize}
+	\item \textbf{Contro}
+	\begin{itemize}
+		\item La semantica potrebbe essere vaga (interpretazioni diverse).
+		\item Forme di analisi limitate.
+		\item Modellazione dei soli aspetti funzionali e strutturali.
+	\end{itemize}
+\end{itemize}
+Sorge quindi il bisogno di avere notazioni formali.
+\subsection{Notazioni formali}
+Vengono utilizzate per complementare le specifiche in linguaggio naturale o in forma di diagramma, specialmente per aspetti critici.
+Viene effettuata una formalizzazione degli elementi del documento dei requisiti.
+\begin{itemize}
+	\item Dichiarazione: struttura degli elementi (tipicamente diagrammi).
+	\item Asserzioni: proprietà degli elementi.
+	\item Meccanismi per strutturare specifiche grandi in modo modulare. 
+\end{itemize}
+Per formale si intende un formato processabile da una macchina, spesso basato su logica matematica. Prevede quindi una sintassi, una semantica e delle regole di inferenza.
+I benefici portati sono:
+\begin{itemize}
+	\item Precisione più alta nelle formulazioni.
+	\item Regole più precise di interpretazione.
+	\item Automazione di controlli e derivazioni.
+\end{itemize}
+\section{Tecniche per il controllo qualità}
+
 \end{document}
